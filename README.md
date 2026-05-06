@@ -36,6 +36,18 @@ The outcome is set of 2 interactive Tableau dashboards that help managerial boar
 
 ![Operational Dashboard](pics/operation.png)
 
+⚙️ How to Use
+
+This repository is logically separated into three main parts to reflect the progression of the analytical pipeline:
+
+- **scraper/:** Contains the automated Selenium scripts used for extracting raw review data from Steam.
+
+- **analizator/:** Houses the core Python engine responsible for NLP preprocessing, TF-IDF vectorization, and training the Logistic Regression model.
+
+- **dashboards.twbx:** The final Tableau workbook featuring the interactive managerial dashboards.
+
+To run the project, please navigate to each specific directory. Detailed step-by-step execution instructions and specific requirements are located inside their respective folders.
+
 # 🛠️ Tech Stack
 
 - Data Engineering: Python 3.9+, Pandas, Numpy
