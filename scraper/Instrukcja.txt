@@ -1,0 +1,58 @@
+INSTRUKCJA URUCHOMIENIA SCRAPERA
+1. WYMAGANIA WSTĘPNE
+
+	Zainstalowany Python (dodany do zmiennej PATH).
+
+	Zainstalowana przeglądarka Google Chrome (skrypt steruje tą przeglądarką).
+
+	Stabilne połączenie z internetem.
+
+2. PRZYGOTOWANIE ŚRODOWISKA
+Wewnątrz folderu z aplikacją należy otworzyć Wiersz poleceń i wpisać następujące komendy:
+A) Utworzenie środowiska wirtualnego:
+
+	python -m venv env
+
+B) Aktywacja środowiska:
+
+	cd env/Scripts
+	activate.bat
+	cd ../..
+
+C) Instalacja bibliotek:
+
+pip install -r requirements.txt
+
+3. URUCHOMIENIE PROGRAMU
+Program można aktywować na dwa sposoby
+
+a) Kliknięcie dwukrotne pliku START.bat znajdującego się w folderze z programem
+
+b) Będąc w konsoli z aktywnym środowiskiem, należy wpisać:
+
+	python scraper.py
+
+4. OBSŁUGA
+Program zada dwa pytania w konsoli:
+
+	Pytanie 1: "Ile opinii chcesz pobrać dla każdej gry?"
+
+Poproszę w tym etapie wpisać dowolną liczbę większą od zera
+
+	Pytanie 2: "Wybierz opinie do pobrania..."
+
+Wpisanie "0", aby pobrać opinie dla wszystkich 5 gier automatycznie.
+Wpisanie ciągu cyfr np. "125", spowoduje pobranie opinii o pierwszej, drugiej i piątej gry z listy.
+
+5. PRZEBIEG DZIAŁANIA
+
+Program automatycznie otworzy okno Google Chrome.
+Będzie wchodził na strony z recenzjami
+Proszę nie zamykać tego okna przeglądarki ręcznie. Program zamknie je sam po zakończeniu pracy.
+Prawidłowo działający program będzie wyświetlał postęp pobierania co 50 zebranych opinii (np. "Pobrano: 50/100")
+Nie zalecane jest nieingerowanie w pracę okna przeglądarki przesuwając nim po ekranie.
+Nie zalecane również jest korzystanie w trakcie działania programu z innych programów, które wykorzystują zasoby internetowe, ponieważ mogą negatywnie wpływać na działanie programu lub program całkowicie się wyłączy.
+
+6. WYNIKI
+Po zakończeniu pracy w folderze pojawią się pliki CSV gotowe do analizy:
+DS1.csv, DS2.csv, DS3.csv, SEKIRO.csv, ER.csv

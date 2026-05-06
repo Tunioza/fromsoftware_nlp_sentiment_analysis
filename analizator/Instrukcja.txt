@@ -1,0 +1,39 @@
+INSTRUKCJA URUCHOMIENIA APLIKACJI
+
+1. WYMAGANIA WSTĘPNE
+Wymagane jest działające środowisko z Python dodanym do zmiennej PATH systemu Windows.
+
+2. INSTALACJA ŚRODOWISKA
+Wewnątrz folderu z aplikacją należy otworzyć Wiersz poleceń i wpisać następujące komendy:
+
+A) Utworzenie środowiska wirtualnego:
+
+	python -m venv env
+
+B) Aktywacja środowiska:
+
+	cd env/Scripts
+	activate.bat
+	cd ../..
+
+C) Instalacja bibliotek:
+
+	pip install -r requirements.txt
+
+3. URUCHOMIENIE PROGRAMU
+Program można aktywować na dwa sposoby
+
+a) Kliknięcie dwukrotne pliku START.bat znajdującego się w folderze z programem
+
+b) Będąc nadal w konsoli (z aktywnym środowiskiem), należy wpisać:
+   
+	python analizator.py
+
+4. OBSŁUGA
+Po uruchomieniu program zapyta o wielkość próbki.
+- Wpisanie '0' spowoduje analizę pełnego zbioru danych
+
+5. PLIKI DANYCH
+Proszę upewnić się, że w folderze z kodem znajdują się pliki CSV:
+DS1.csv, DS2.csv, DS3.csv, SEKIRO.csv, ER.csv
+Znajdujące się tam oryginalnie lub utworzone przez scraper.py
